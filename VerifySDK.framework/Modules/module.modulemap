@@ -1,0 +1,10 @@
+framework module VerifySDK {
+  umbrella header "VerifySDK.h"
+
+  export *
+  module * { export * }
+}
+
+module VerifySDK.Swift {
+    header "VerifySDK-Swift.h"
+}

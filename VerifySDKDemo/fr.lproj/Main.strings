@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "Your phone number was successfully verified"; ObjectID = "3aI-WZ-gQm"; */
+"3aI-WZ-gQm.text" = "Votre numéro de téléphone a été vérifié avec succès";
+
+/* Class = "UIButton"; normalTitle = "Use my phone number"; ObjectID = "oeZ-lG-ojd"; */
+"oeZ-lG-ojd.normalTitle" = "Utilisez mon numéro de téléphone";
+
+/* Class = "UILabel"; text = "AV"; ObjectID = "rhL-PL-6JA"; */
+"rhL-PL-6JA.text" = "AV";
