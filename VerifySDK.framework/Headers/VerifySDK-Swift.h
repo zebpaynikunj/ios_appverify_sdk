@@ -143,9 +143,25 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 SWIFT_CLASS("_TtC9VerifySDK14TSVerification")
 @interface TSVerification : NSObject
+/// Provide a prebuilt view controller along with country picker and a phone number formatter
+/// \param withJWTString JWT URL string
+///
+///
+/// returns:
+/// A prebuilt View Controller
 - (TSVerificationViewController * _Nonnull)viewControllerForNumberVerificationWithJWTString:(NSString * _Nonnull)jwtString SWIFT_WARN_UNUSED_RESULT;
+/// Verify the given phone number
+/// Use the delegate to check if the verification failed or succeded
+/// \param phoneNumber The phone number to be verified
+///
+/// \param withJwtURL JWT URL
+///
 - (void)verifyWithPhoneNumber:(NSString * _Nonnull)phoneNumber jwtURL:(NSURL * _Nonnull)jwtURL;
-- (void)finalizeWithVerificationCode:(NSString * _Nonnull)verificationCode;
+/// Finalize the verification process
+/// Use the delegate to check if the verification failed or succeded
+/// \param verificationURLString The URL string passed from the SMS
+///
+- (void)finalizeWithVerificationURLString:(NSString * _Nonnull)verificationURLString;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

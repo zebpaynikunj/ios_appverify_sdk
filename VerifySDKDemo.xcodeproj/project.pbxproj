@@ -8,15 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		BB1ED4E81E8EF03300FA10E1 /* Bokeh.sks in Resources */ = {isa = PBXBuildFile; fileRef = BB1ED4E71E8EF03300FA10E1 /* Bokeh.sks */; };
+		BB20A5431EE8B427009E6AE4 /* VerifySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB20A5421EE8B427009E6AE4 /* VerifySDK.framework */; };
+		BB20A5441EE8B427009E6AE4 /* VerifySDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BB20A5421EE8B427009E6AE4 /* VerifySDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BB4502DE1EB2927D0010E941 /* icon 2017.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BB4502DD1EB2927D0010E941 /* icon 2017.jpg */; };
+		BB4CAE081EE776C200DA0EF5 /* PhoneNumberKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB4CAE071EE776C200DA0EF5 /* PhoneNumberKit.framework */; };
+		BB4CAE091EE776C200DA0EF5 /* PhoneNumberKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BB4CAE071EE776C200DA0EF5 /* PhoneNumberKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BB776DFF1E2EE1BF00912385 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB776DFE1E2EE1BF00912385 /* AppDelegate.swift */; };
 		BB776E041E2EE1BF00912385 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB776E021E2EE1BF00912385 /* Main.storyboard */; };
 		BB776E061E2EE1BF00912385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB776E051E2EE1BF00912385 /* Assets.xcassets */; };
 		BB776E091E2EE1BF00912385 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB776E071E2EE1BF00912385 /* LaunchScreen.storyboard */; };
-		BB8818921E7B53E50051FEEE /* PhoneNumberKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8818911E7B53E50051FEEE /* PhoneNumberKit.framework */; };
-		BB8818931E7B53E50051FEEE /* PhoneNumberKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BB8818911E7B53E50051FEEE /* PhoneNumberKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		BBF4D4B51EB7C0B9008C6FB8 /* VerifySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF4D4B31EB7C0B4008C6FB8 /* VerifySDK.framework */; };
-		BBF4D4B61EB7C0B9008C6FB8 /* VerifySDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BBF4D4B31EB7C0B4008C6FB8 /* VerifySDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BBFFA2A31E30330500C8A531 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFFA2A21E30330500C8A531 /* ViewController.swift */; };
 		BBFFA2AB1E3036C800C8A531 /* VerifiedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFFA2AA1E3036C800C8A531 /* VerifiedViewController.swift */; };
 /* End PBXBuildFile section */
@@ -28,8 +28,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BBF4D4B61EB7C0B9008C6FB8 /* VerifySDK.framework in Embed Frameworks */,
-				BB8818931E7B53E50051FEEE /* PhoneNumberKit.framework in Embed Frameworks */,
+				BB20A5441EE8B427009E6AE4 /* VerifySDK.framework in Embed Frameworks */,
+				BB4CAE091EE776C200DA0EF5 /* PhoneNumberKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,19 +38,19 @@
 
 /* Begin PBXFileReference section */
 		BB1ED4E71E8EF03300FA10E1 /* Bokeh.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Bokeh.sks; sourceTree = "<group>"; };
+		BB20A5421EE8B427009E6AE4 /* VerifySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VerifySDK.framework; sourceTree = "<group>"; };
 		BB40ABF51EA16456000505E0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		BB40ABF61EA16456000505E0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		BB40ABF71EA16463000505E0 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		BB40ABF81EA16464000505E0 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		BB4502DD1EB2927D0010E941 /* icon 2017.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "icon 2017.jpg"; sourceTree = "<group>"; };
+		BB4CAE071EE776C200DA0EF5 /* PhoneNumberKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PhoneNumberKit.framework; sourceTree = "<group>"; };
 		BB776DFB1E2EE1BF00912385 /* VerifySDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VerifySDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB776DFE1E2EE1BF00912385 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB776E031E2EE1BF00912385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB776E051E2EE1BF00912385 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB776E081E2EE1BF00912385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB776E0A1E2EE1BF00912385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BB8818911E7B53E50051FEEE /* PhoneNumberKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PhoneNumberKit.framework; sourceTree = "<group>"; };
-		BBF4D4B31EB7C0B4008C6FB8 /* VerifySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VerifySDK.framework; sourceTree = "<group>"; };
 		BBFFA2A21E30330500C8A531 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BBFFA2AA1E3036C800C8A531 /* VerifiedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifiedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,8 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBF4D4B51EB7C0B9008C6FB8 /* VerifySDK.framework in Frameworks */,
-				BB8818921E7B53E50051FEEE /* PhoneNumberKit.framework in Frameworks */,
+				BB20A5431EE8B427009E6AE4 /* VerifySDK.framework in Frameworks */,
+				BB4CAE081EE776C200DA0EF5 /* PhoneNumberKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,8 +71,8 @@
 		BB776DF21E2EE1BF00912385 = {
 			isa = PBXGroup;
 			children = (
-				BBF4D4B31EB7C0B4008C6FB8 /* VerifySDK.framework */,
-				BB8818911E7B53E50051FEEE /* PhoneNumberKit.framework */,
+				BB20A5421EE8B427009E6AE4 /* VerifySDK.framework */,
+				BB4CAE071EE776C200DA0EF5 /* PhoneNumberKit.framework */,
 				BB776DFD1E2EE1BF00912385 /* VerifySDKDemo */,
 				BB776DFC1E2EE1BF00912385 /* Products */,
 				BB776E101E2EE1ED00912385 /* Frameworks */,
@@ -120,8 +120,8 @@
 				BB776DF71E2EE1BF00912385 /* Sources */,
 				BB776DF81E2EE1BF00912385 /* Frameworks */,
 				BB776DF91E2EE1BF00912385 /* Resources */,
-				BBAC9D201E53DA3E00E9C693 /* ShellScript */,
 				BB9C00FF1E78965E00B69013 /* Embed Frameworks */,
+				BBAC9D201E53DA3E00E9C693 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -185,7 +185,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		BBAC9D201E53DA3E00E9C693 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (

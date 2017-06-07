@@ -75,7 +75,7 @@ class ViewController: UIViewController, TSVerificationViewControllerDelegate {
    
     // The finalize method called when the URL is clicked by the user
     public func finalize(verificationCode: String) {
-        self.verification.finalizeWith(verificationCode: verificationCode)
+        self.verification.finalizeWith(verificationURLString: verificationCode)
     }
     
     
