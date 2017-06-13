@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BB1ED4E81E8EF03300FA10E1 /* Bokeh.sks in Resources */ = {isa = PBXBuildFile; fileRef = BB1ED4E71E8EF03300FA10E1 /* Bokeh.sks */; };
-		BB20A5431EE8B427009E6AE4 /* VerifySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB20A5421EE8B427009E6AE4 /* VerifySDK.framework */; };
-		BB20A5441EE8B427009E6AE4 /* VerifySDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BB20A5421EE8B427009E6AE4 /* VerifySDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BB20A5481EE8BE74009E6AE4 /* VerifySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB20A5471EE8BE74009E6AE4 /* VerifySDK.framework */; };
+		BB20A5491EE8BE74009E6AE4 /* VerifySDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BB20A5471EE8BE74009E6AE4 /* VerifySDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BB4502DE1EB2927D0010E941 /* icon 2017.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BB4502DD1EB2927D0010E941 /* icon 2017.jpg */; };
 		BB4CAE081EE776C200DA0EF5 /* PhoneNumberKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB4CAE071EE776C200DA0EF5 /* PhoneNumberKit.framework */; };
 		BB4CAE091EE776C200DA0EF5 /* PhoneNumberKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BB4CAE071EE776C200DA0EF5 /* PhoneNumberKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -28,7 +28,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BB20A5441EE8B427009E6AE4 /* VerifySDK.framework in Embed Frameworks */,
+				BB20A5491EE8BE74009E6AE4 /* VerifySDK.framework in Embed Frameworks */,
 				BB4CAE091EE776C200DA0EF5 /* PhoneNumberKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		BB1ED4E71E8EF03300FA10E1 /* Bokeh.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Bokeh.sks; sourceTree = "<group>"; };
-		BB20A5421EE8B427009E6AE4 /* VerifySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VerifySDK.framework; sourceTree = "<group>"; };
+		BB20A5471EE8BE74009E6AE4 /* VerifySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VerifySDK.framework; sourceTree = "<group>"; };
 		BB40ABF51EA16456000505E0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		BB40ABF61EA16456000505E0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		BB40ABF71EA16463000505E0 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB20A5431EE8B427009E6AE4 /* VerifySDK.framework in Frameworks */,
+				BB20A5481EE8BE74009E6AE4 /* VerifySDK.framework in Frameworks */,
 				BB4CAE081EE776C200DA0EF5 /* PhoneNumberKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,7 +71,7 @@
 		BB776DF21E2EE1BF00912385 = {
 			isa = PBXGroup;
 			children = (
-				BB20A5421EE8B427009E6AE4 /* VerifySDK.framework */,
+				BB20A5471EE8BE74009E6AE4 /* VerifySDK.framework */,
 				BB4CAE071EE776C200DA0EF5 /* PhoneNumberKit.framework */,
 				BB776DFD1E2EE1BF00912385 /* VerifySDKDemo */,
 				BB776DFC1E2EE1BF00912385 /* Products */,
@@ -349,6 +349,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "8936ede5-23f8-4f97-92c9-4236b4a7c2da";
 				PROVISIONING_PROFILE_SPECIFIER = "VerifySDKDemo Dev";
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/VerifySDKDemo";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -371,6 +372,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "4d007871-2c7d-4e33-b4d0-0fba56fb79bc";
 				PROVISIONING_PROFILE_SPECIFIER = "VerifySDKDemo Distribution";
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/VerifySDKDemo";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
