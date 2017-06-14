@@ -5,6 +5,7 @@ The App Verify SDK allows iOS apps to use custom URL schemes to verify a users p
 
 ## Documentation
 Comprehensive documentation is available at https://developer.telesign.com/docs/app-verify-ios-sdk-self
+
 Android SDK is available at https://github.com/TeleSign/android_appverify_sdk
 
 ## Requirements 
