@@ -1,0 +1,3 @@
+framework module AppVerify {
+    header "AppVerify-Swift.h"
+}
