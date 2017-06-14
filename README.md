@@ -35,17 +35,17 @@ Comprehensive documentation is available at https://developer.telesign.com/docs/
 
 - In your app delegate, implement this protocol method 
 ```
-			- application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool
+- application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool
 ```
 - Once the URL is obtained, pass the data using 
 ```
-			- finalizeWith(verificationURLString: String)
+- finalizeWith(verificationURLString: String)
 ```
 - Implement the following delegate methods to check if the verification succeeded or failed
 
 ```
-	- VerificationFailed(error: TSVerificationError)
-	- VerificationSuccessful()
+- VerificationFailed(error: TSVerificationError)
+- VerificationSuccessful()
 ```
 			 
 		
