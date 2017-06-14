@@ -15,7 +15,6 @@ Comprehensive documentation is available at https://developer.telesign.com/docs/
 
 	
 ## Usage 
-` You will need to setup a JWT service to use the application. You will need your TeleSign customerID and an API key for authentication `
 
 *To run the example project*
 
