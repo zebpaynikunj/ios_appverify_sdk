@@ -25,7 +25,7 @@ Comprehensive documentation is available at https://developer.telesign.com/docs/
 *To configure your own project*
 
 - Drag and drop the AppVerify.framework into your project
-- Copy the module.modulemap file inside AppVerify inside your Source directory
+- Copy the module.modulemap file inside AppVerifyDemo folder inside your Source directory
 - Add ${SRCROOT}/(yourfoldername) in Build settings > Import Paths 
 
 - Use the prebuilt view controller or create your own UI to send the phone number and the JWT URL using one of the two methods 
