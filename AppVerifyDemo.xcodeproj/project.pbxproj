@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		BB4CAE081EE776C200DA0EF5 /* PhoneNumberKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB4CAE071EE776C200DA0EF5 /* PhoneNumberKit.framework */; };
 		BB4CAE091EE776C200DA0EF5 /* PhoneNumberKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BB4CAE071EE776C200DA0EF5 /* PhoneNumberKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		BBC98D241EF1BB1B000261F1 /* AppVerify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBC98D231EF1BB1B000261F1 /* AppVerify.framework */; };
-		BBC98D251EF1BB1B000261F1 /* AppVerify.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BBC98D231EF1BB1B000261F1 /* AppVerify.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BB67FF4E1EF1ED6A0032B9CA /* AppVerify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB67FF4D1EF1ED6A0032B9CA /* AppVerify.framework */; };
+		BB67FF4F1EF1ED6A0032B9CA /* AppVerify.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BB67FF4D1EF1ED6A0032B9CA /* AppVerify.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BBC98D291EF1BC08000261F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC98D261EF1BC08000261F1 /* AppDelegate.swift */; };
 		BBC98D2A1EF1BC08000261F1 /* VerifiedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC98D271EF1BC08000261F1 /* VerifiedViewController.swift */; };
 		BBC98D2B1EF1BC08000261F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC98D281EF1BC08000261F1 /* ViewController.swift */; };
@@ -29,7 +29,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				BB4CAE091EE776C200DA0EF5 /* PhoneNumberKit.framework in Embed Frameworks */,
-				BBC98D251EF1BB1B000261F1 /* AppVerify.framework in Embed Frameworks */,
+				BB67FF4F1EF1ED6A0032B9CA /* AppVerify.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,8 +38,8 @@
 
 /* Begin PBXFileReference section */
 		BB4CAE071EE776C200DA0EF5 /* PhoneNumberKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PhoneNumberKit.framework; sourceTree = "<group>"; };
+		BB67FF4D1EF1ED6A0032B9CA /* AppVerify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppVerify.framework; sourceTree = "<group>"; };
 		BB776DFB1E2EE1BF00912385 /* AppVerifyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppVerifyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BBC98D231EF1BB1B000261F1 /* AppVerify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppVerify.framework; sourceTree = "<group>"; };
 		BBC98D261EF1BC08000261F1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = AppVerifyDemo/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		BBC98D271EF1BC08000261F1 /* VerifiedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VerifiedViewController.swift; path = AppVerifyDemo/VerifiedViewController.swift; sourceTree = SOURCE_ROOT; };
 		BBC98D281EF1BC08000261F1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = AppVerifyDemo/ViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -56,7 +56,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB4CAE081EE776C200DA0EF5 /* PhoneNumberKit.framework in Frameworks */,
-				BBC98D241EF1BB1B000261F1 /* AppVerify.framework in Frameworks */,
+				BB67FF4E1EF1ED6A0032B9CA /* AppVerify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +66,7 @@
 		BB776DF21E2EE1BF00912385 = {
 			isa = PBXGroup;
 			children = (
+				BB67FF4D1EF1ED6A0032B9CA /* AppVerify.framework */,
 				BB776DFD1E2EE1BF00912385 /* AppVerifyDemo */,
 				BB776DFC1E2EE1BF00912385 /* Products */,
 				BB776E101E2EE1ED00912385 /* Frameworks */,
@@ -99,7 +100,6 @@
 		BB776E101E2EE1ED00912385 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BBC98D231EF1BB1B000261F1 /* AppVerify.framework */,
 				BB4CAE071EE776C200DA0EF5 /* PhoneNumberKit.framework */,
 			);
 			name = Frameworks;
@@ -342,6 +342,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "8936ede5-23f8-4f97-92c9-4236b4a7c2da";
 				PROVISIONING_PROFILE_SPECIFIER = "VerifySDKDemo Dev";
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/AppVerifyDemo";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -366,6 +367,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "4d007871-2c7d-4e33-b4d0-0fba56fb79bc";
 				PROVISIONING_PROFILE_SPECIFIER = "VerifySDKDemo Distribution";
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/AppVerifyDemo";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
