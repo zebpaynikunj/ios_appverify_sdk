@@ -9,6 +9,13 @@ Comprehensive documentation is available at https://developer.telesign.com/docs/
 ## Requirements 
 	- XCode 8.3
 	- Swift 3.2
+	` You will need to setup a JWT service to use the application. You will need your TeleSign customerID and an API key for authentication `
+	` You will also need to register a a Custom URL type for your app in the plist file. Include the CFBundleURLTypes key in your app’s Info.plist file and register the CFBundleURLSchemes to match what was registered with TeleSign  `
+
+	
+## Usage 
+
+=======
 	
 ## Usage 
 ` You will need to setup a JWT service to use the application. You will need your TeleSign customerID and an API key for authentication `
@@ -22,6 +29,9 @@ Comprehensive documentation is available at https://developer.telesign.com/docs/
 *To configure your own project*
 
 - Drag and drop the AppVerify.framework into your project
+- Copy the module.modulemap file inside AppVerify inside your Source directory
+- Add ${SRCROOT}/(yourfoldername) in Build settings > Import Paths 
+
 - Use the prebuilt view controller or create your own UI to send the phone number and the JWT URL using one of the two methods 
 
 ```
