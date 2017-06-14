@@ -1,4 +1,4 @@
-
+![Alt text](https://github.com/TeleSign/ios_verification_sdk/blob/master/APPverify.jpeg)
 ## Overview
 
 The App Verify SDK allows iOS apps to use custom URL schemes to verify a users phone number. TeleSign service securely sends SMS to the users device which contains a unique URL that the user can click on to complete verification automatically.
