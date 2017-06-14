@@ -25,8 +25,8 @@ Comprehensive documentation is available at https://developer.telesign.com/docs/
 - Use the prebuilt view controller or create your own UI to send the phone number and the JWT URL using one of the two methods 
 
 ```
-	- verify(phoneNumber: String, jwtURL: URL)
-	- viewControllerForNumberVerification(withJWTString jwtString: String)
+- verify(phoneNumber: String, jwtURL: URL)
+- viewControllerForNumberVerification(withJWTString jwtString: String)
 ```
 - Set the delegate and if you are using your own UI implement this protocol method to show the user that a SMS has been sent and alert them to click on the link
 ```
