@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: pygenjwt
+Version: 1.0
+Summary: Telesign JWT Generator
+Home-page: UNKNOWN
+Author: TeleSign
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: pygenjwt
+        ===============
+        
+        Basic JSON Web Token Generator for python 2.x
+        
+        
+        ==============
+        
+        Dependencies:
+        
+        - bottle
+        - pyjwt
+        
+Keywords: telesign
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Topic :: Telesign :: Libraries :: Shared
