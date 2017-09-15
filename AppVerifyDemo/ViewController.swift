@@ -9,6 +9,7 @@
 import UIKit
 import AppVerify
 
+
 class ViewController: UIViewController, TSVerificationViewControllerDelegate {
 
     let verification = TSVerification()
@@ -17,6 +18,7 @@ class ViewController: UIViewController, TSVerificationViewControllerDelegate {
     @IBOutlet weak var codeTextField: UITextField!
     @IBOutlet weak var verifyButton: UIButton!
     @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var buildVersionLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +26,9 @@ class ViewController: UIViewController, TSVerificationViewControllerDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         self.verifyButton.layer.cornerRadius = 7.0
         self.messageLabel.text = ""
+        if let version = Bundle.main.infoDictionary?["CFBundleVersion"] as? String {
+            self.buildVersionLabel.text = "Build Version \(version)"
+        }
        
     }
     
@@ -50,10 +55,15 @@ class ViewController: UIViewController, TSVerificationViewControllerDelegate {
     // MARK: - AppVerify methods
     @IBAction func verifyBtnClicked(_ sender: Any) {
         
+        // Clear the existing message if any
+        self.messageLabel.text = ""
         // Add your JWT URL here
-        let jwtURL = ""
+        let jwtURLString = ""
+        
+        // Add your configuration here
+        let configuration = viewConfiguration(logoImage: UIImage(named:"icon 2017"), themeColor: UIColor.yellow, labelColor: UIColor.white, backgroundColor: UIColor.blue)
         // Get the prebuilt verification view controller
-        let vc =   self.verification.viewControllerForNumberVerification(withJWTString: jwtURL)
+        let vc =   self.verification.viewControllerForNumberVerification(withJWTString: jwtURLString, andConfiguration: configuration)
         // Set the delegate
         vc.delegate = self
         // Present the view controller
@@ -74,9 +84,9 @@ class ViewController: UIViewController, TSVerificationViewControllerDelegate {
     
    
     // The finalize method called when the URL is clicked by the user
-    public func finalize(verificationCode: String) {
-        self.verification.finalizeWith(verificationURLString: verificationCode)
-    }
+    //    public func finalize(verificationURL: String) {
+    //        self.verification.finalizeWith(verificationURL: verificationURL)
+    //    }
     
     
     // If you are not using the prebuilt controller, add these two delegate methods

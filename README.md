@@ -15,6 +15,11 @@ Android SDK is available at https://github.com/TeleSign/android_appverify_sdk
 
 ` You will also need to register a a Custom URL type for your app in the plist file. Include the CFBundleURLTypes key in your app’s Info.plist file and register the CFBundleURLSchemes to match what was registered with TeleSign  `
 
+
+## SDK 1.1 Changes
+- You can now customize the prebuilt view controllers
+- Ability to manually enter code to complete verifications
+- Bug fixes
 	
 ## Usage 
 
@@ -30,12 +35,19 @@ Android SDK is available at https://github.com/TeleSign/android_appverify_sdk
 - Copy the module.modulemap file inside AppVerifyDemo folder inside your Source directory
 - Add ${SRCROOT}/(yourfoldername) in Build settings > Import Paths 
 
-- Use the prebuilt view controller or create your own UI to send the phone number and the JWT URL using one of the two methods 
+- Use the prebuilt view controller or create your own UI to send the phone number and the JWT URL along with the configuration using one of the two methods 
 
 ```
 - verify(phoneNumber: String, jwtURL: URL)
-- viewControllerForNumberVerification(withJWTString jwtString: String)
+- viewControllerForNumberVerification(withJWTString jwtString: String, andConfiguration configuration: viewConfiguration)
 ```
+
+- You can configure the viewController with your own colors and logo by doing this 
+
+```
+let configuration = viewConfiguration(logoImage: YOURIMAGE, themeColor: CUSTOMCOLOR, labelColor: CUSTOMCOLOR, backgroundColor: CUSTOMCOLOR)
+```
+
 - Set the delegate and if you are using your own UI implement this protocol method to show the user that a SMS has been sent and alert them to click on the link
 ```
 - InitiateSucceded(withTTL: TimeInterval)
@@ -45,9 +57,11 @@ Android SDK is available at https://github.com/TeleSign/android_appverify_sdk
 ```
 - application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool
 ```
-- Once the URL is obtained, pass the data using 
+- Once the URL is obtained, pass the data using one of the methods below
 ```
 - finalizeWith(verificationURLString: String)
+- finalizeWith(verificationURL: URL)
+- finalizeWith(verificationCode: String)
 ```
 - Implement the following delegate methods to check if the verification succeeded or failed
 
