@@ -83,13 +83,17 @@ class ViewController: UIViewController, TSVerificationViewControllerDelegate {
     }
     
    
+   
+    
+    
+    // If you are not using the prebuilt controller, call this method from AppDelegate and add these two delegate methods
+    
     // The finalize method called when the URL is clicked by the user
     //    public func finalize(verificationURL: String) {
     //        self.verification.finalizeWith(verificationURL: verificationURL)
     //    }
     
     
-    // If you are not using the prebuilt controller, add these two delegate methods
     // MARK: - AppVerify Delegate Methods
     /*
      public func VerificationFailed(errorMessage: String) {
