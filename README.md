@@ -15,6 +15,11 @@ Android SDK is available at https://github.com/TeleSign/android_appverify_sdk
 
 ` You will also need to register a a Custom URL type for your app in the plist file. Include the CFBundleURLTypes key in your app’s Info.plist file and register the CFBundleURLSchemes to match what was registered with TeleSign  `
 
+
+## SDK 1.2.2 Changes
+- Updated framework to support the latest Swift 3.2.3 
+- Updated the framework to enable Bitcode
+
 ## SDK 1.2.1 Changes
 - Updated framework to support the latest Swift 3.2.2 
 - Bug fixes
