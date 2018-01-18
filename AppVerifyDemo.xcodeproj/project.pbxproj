@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		BB3305EE1F6B0F8100E39126 /* AppVerify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB3305ED1F6B0F8100E39126 /* AppVerify.framework */; };
 		BB3305EF1F6B0F8100E39126 /* AppVerify.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BB3305ED1F6B0F8100E39126 /* AppVerify.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		BB3305F11F6B0F9200E39126 /* PhoneNumberKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB3305F01F6B0F9100E39126 /* PhoneNumberKit.framework */; };
-		BB3305F21F6B0F9200E39126 /* PhoneNumberKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BB3305F01F6B0F9100E39126 /* PhoneNumberKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BBC98D291EF1BC08000261F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC98D261EF1BC08000261F1 /* AppDelegate.swift */; };
 		BBC98D2A1EF1BC08000261F1 /* VerifiedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC98D271EF1BC08000261F1 /* VerifiedViewController.swift */; };
 		BBC98D2B1EF1BC08000261F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC98D281EF1BC08000261F1 /* ViewController.swift */; };
@@ -28,7 +26,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				BB3305EF1F6B0F8100E39126 /* AppVerify.framework in Embed Frameworks */,
-				BB3305F21F6B0F9200E39126 /* PhoneNumberKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -36,6 +33,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1046A041BFFB0680B3B1941D /* Pods-AppVerifyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppVerifyDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppVerifyDemo/Pods-AppVerifyDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		2EBBC118FEA4CFAAA2BBCF2B /* Pods_AppVerifyDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppVerifyDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36ECA568D128090E80EE28DE /* Pods-AppVerifyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppVerifyDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppVerifyDemo/Pods-AppVerifyDemo.release.xcconfig"; sourceTree = "<group>"; };
 		BB3305ED1F6B0F8100E39126 /* AppVerify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppVerify.framework; sourceTree = "<group>"; };
 		BB3305F01F6B0F9100E39126 /* PhoneNumberKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PhoneNumberKit.framework; sourceTree = "<group>"; };
 		BB4CAE071EE776C200DA0EF5 /* PhoneNumberKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PhoneNumberKit.framework; sourceTree = "<group>"; };
@@ -56,13 +56,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB3305EE1F6B0F8100E39126 /* AppVerify.framework in Frameworks */,
-				BB3305F11F6B0F9200E39126 /* PhoneNumberKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A742EADB7E5943F4853D6907 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1046A041BFFB0680B3B1941D /* Pods-AppVerifyDemo.debug.xcconfig */,
+				36ECA568D128090E80EE28DE /* Pods-AppVerifyDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BB776DF21E2EE1BF00912385 = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +79,7 @@
 				BB776DFD1E2EE1BF00912385 /* AppVerifyDemo */,
 				BB776DFC1E2EE1BF00912385 /* Products */,
 				BB776E101E2EE1ED00912385 /* Frameworks */,
+				A742EADB7E5943F4853D6907 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				BB4CAE071EE776C200DA0EF5 /* PhoneNumberKit.framework */,
+				2EBBC118FEA4CFAAA2BBCF2B /* Pods_AppVerifyDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -113,11 +123,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB776E0D1E2EE1BF00912385 /* Build configuration list for PBXNativeTarget "AppVerifyDemo" */;
 			buildPhases = (
+				271CFDE489F01D994890F88C /* [CP] Check Pods Manifest.lock */,
 				BB776DF71E2EE1BF00912385 /* Sources */,
 				BB776DF81E2EE1BF00912385 /* Frameworks */,
 				BB776DF91E2EE1BF00912385 /* Resources */,
 				BB9C00FF1E78965E00B69013 /* Embed Frameworks */,
 				BBAC9D201E53DA3E00E9C693 /* ShellScript */,
+				FB47DBE94467924D50626DAE /* [CP] Embed Pods Frameworks */,
+				10324A953A04666FFC139111 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,6 +192,39 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		10324A953A04666FFC139111 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppVerifyDemo/Pods-AppVerifyDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		271CFDE489F01D994890F88C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppVerifyDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BBAC9D201E53DA3E00E9C693 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 12;
@@ -191,6 +237,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "echo \"Target architectures: $ARCHS\"\n\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info $FRAMEWORK_EXECUTABLE_PATH)\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\n# remove simulator's archs if location is not simulator's directory\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\necho \"No need to remove archs\"\n;;\n*)\nif $(lipo $FRAMEWORK_EXECUTABLE_PATH -verify_arch \"i386\") ; then\nlipo -output $FRAMEWORK_TMP_PATH -remove \"i386\" $FRAMEWORK_EXECUTABLE_PATH\necho \"i386 architecture removed\"\nrm $FRAMEWORK_EXECUTABLE_PATH\nmv $FRAMEWORK_TMP_PATH $FRAMEWORK_EXECUTABLE_PATH\nfi\nif $(lipo $FRAMEWORK_EXECUTABLE_PATH -verify_arch \"x86_64\") ; then\nlipo -output $FRAMEWORK_TMP_PATH -remove \"x86_64\" $FRAMEWORK_EXECUTABLE_PATH\necho \"x86_64 architecture removed\"\nrm $FRAMEWORK_EXECUTABLE_PATH\nmv $FRAMEWORK_TMP_PATH $FRAMEWORK_EXECUTABLE_PATH\nfi\n;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info $FRAMEWORK_EXECUTABLE_PATH)\n\ndone";
+		};
+		FB47DBE94467924D50626DAE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AppVerifyDemo/Pods-AppVerifyDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PhoneNumberKit/PhoneNumberKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PhoneNumberKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppVerifyDemo/Pods-AppVerifyDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -338,6 +402,7 @@
 		};
 		BB776E0E1E2EE1BF00912385 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1046A041BFFB0680B3B1941D /* Pods-AppVerifyDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -345,11 +410,10 @@
 				DEVELOPMENT_TEAM = 7R8L2L4CVX;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/AppVerifyDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_SWIFT_FLAGS = "-Xfrontend -debug-time-function-bodies";
 				PRODUCT_BUNDLE_IDENTIFIER = com.telesign.VerifySDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "0f426f34-a0d6-4db9-89ee-ec7984e4ab36";
@@ -364,6 +428,7 @@
 		};
 		BB776E0F1E2EE1BF00912385 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36ECA568D128090E80EE28DE /* Pods-AppVerifyDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -372,10 +437,9 @@
 				DEVELOPMENT_TEAM = 7R8L2L4CVX;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/AppVerifyDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				OTHER_SWIFT_FLAGS = "-Xfrontend -debug-time-function-bodies";
 				PRODUCT_BUNDLE_IDENTIFIER = com.telesign.VerifySDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "4d007871-2c7d-4e33-b4d0-0fba56fb79bc";
