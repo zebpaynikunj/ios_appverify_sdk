@@ -11,19 +11,15 @@ Android SDK is available at https://github.com/TeleSign/android_appverify_sdk
 ## Requirements 
 	- XCode 9.1
 	- Swift 4.0
+
 ` You will need to setup a JWT service to use the application. You will need your TeleSign customerID and an API key for authentication `
 
 ` You will also need to register a a Custom URL type for your app in the plist file. Include the CFBundleURLTypes key in your app’s Info.plist file and register the CFBundleURLSchemes to match what was registered with TeleSign  `
 
-## SDK 1.2.1 Changes
-- Updated framework to support the latest Swift 3.2.2 
-- Bug fixes
+## SDK 1.2.2 Changes
+- Updated framework to support bitcode optimization
+- Updated sample app to use cocoapods instead of framework for external dependency
 
-## SDK 1.1 Changes
-- You can now customize the prebuilt view controllers
-- Ability to manually enter code to complete verifications
-- Bug fixes
-	
 ## Usage 
 
 *To run the example project*
