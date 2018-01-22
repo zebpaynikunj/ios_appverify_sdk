@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BB3305EE1F6B0F8100E39126 /* AppVerify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB3305ED1F6B0F8100E39126 /* AppVerify.framework */; };
-		BB3305EF1F6B0F8100E39126 /* AppVerify.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BB3305ED1F6B0F8100E39126 /* AppVerify.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BBC98D291EF1BC08000261F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC98D261EF1BC08000261F1 /* AppDelegate.swift */; };
 		BBC98D2A1EF1BC08000261F1 /* VerifiedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC98D271EF1BC08000261F1 /* VerifiedViewController.swift */; };
 		BBC98D2B1EF1BC08000261F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC98D281EF1BC08000261F1 /* ViewController.swift */; };
@@ -16,16 +14,19 @@
 		BBC98D321EF1BC39000261F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC98D2F1EF1BC39000261F1 /* Assets.xcassets */; };
 		BBC98D331EF1BC39000261F1 /* Bokeh.sks in Resources */ = {isa = PBXBuildFile; fileRef = BBC98D301EF1BC39000261F1 /* Bokeh.sks */; };
 		BBC98D371EF1BC45000261F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBC98D351EF1BC45000261F1 /* LaunchScreen.storyboard */; };
+		DDD8197276904B68B7F84677 /* Pods_AppVerifyDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBBC118FEA4CFAAA2BBCF2B /* Pods_AppVerifyDemo.framework */; };
+		FA34A3E42016A8A6005EEE65 /* AppVerify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB3305ED1F6B0F8100E39126 /* AppVerify.framework */; };
+		FA34A3E52016A8A6005EEE65 /* AppVerify.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BB3305ED1F6B0F8100E39126 /* AppVerify.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		BB9C00FF1E78965E00B69013 /* Embed Frameworks */ = {
+		FA34A3E62016A8A6005EEE65 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BB3305EF1F6B0F8100E39126 /* AppVerify.framework in Embed Frameworks */,
+				FA34A3E52016A8A6005EEE65 /* AppVerify.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -37,7 +38,6 @@
 		2EBBC118FEA4CFAAA2BBCF2B /* Pods_AppVerifyDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppVerifyDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36ECA568D128090E80EE28DE /* Pods-AppVerifyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppVerifyDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppVerifyDemo/Pods-AppVerifyDemo.release.xcconfig"; sourceTree = "<group>"; };
 		BB3305ED1F6B0F8100E39126 /* AppVerify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppVerify.framework; sourceTree = "<group>"; };
-		BB3305F01F6B0F9100E39126 /* PhoneNumberKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PhoneNumberKit.framework; sourceTree = "<group>"; };
 		BB4CAE071EE776C200DA0EF5 /* PhoneNumberKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PhoneNumberKit.framework; sourceTree = "<group>"; };
 		BB776DFB1E2EE1BF00912385 /* AppVerifyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppVerifyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBC98D261EF1BC08000261F1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = AppVerifyDemo/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
@@ -55,7 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB3305EE1F6B0F8100E39126 /* AppVerify.framework in Frameworks */,
+				FA34A3E42016A8A6005EEE65 /* AppVerify.framework in Frameworks */,
+				DDD8197276904B68B7F84677 /* Pods_AppVerifyDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +75,6 @@
 		BB776DF21E2EE1BF00912385 = {
 			isa = PBXGroup;
 			children = (
-				BB3305F01F6B0F9100E39126 /* PhoneNumberKit.framework */,
 				BB3305ED1F6B0F8100E39126 /* AppVerify.framework */,
 				BB776DFD1E2EE1BF00912385 /* AppVerifyDemo */,
 				BB776DFC1E2EE1BF00912385 /* Products */,
@@ -127,10 +127,10 @@
 				BB776DF71E2EE1BF00912385 /* Sources */,
 				BB776DF81E2EE1BF00912385 /* Frameworks */,
 				BB776DF91E2EE1BF00912385 /* Resources */,
-				BB9C00FF1E78965E00B69013 /* Embed Frameworks */,
 				BBAC9D201E53DA3E00E9C693 /* ShellScript */,
 				FB47DBE94467924D50626DAE /* [CP] Embed Pods Frameworks */,
 				10324A953A04666FFC139111 /* [CP] Copy Pods Resources */,
+				FA34A3E62016A8A6005EEE65 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -409,10 +409,13 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 7R8L2L4CVX;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
-				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/AppVerifyDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.telesign.VerifySDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -436,10 +439,13 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 7R8L2L4CVX;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
-				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/AppVerifyDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.telesign.VerifySDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "4d007871-2c7d-4e33-b4d0-0fba56fb79bc";
