@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2EE56298CED2E09D362F89B7 /* Pods_AppVerifyDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBBC118FEA4CFAAA2BBCF2B /* Pods_AppVerifyDemo.framework */; };
 		BBC98D291EF1BC08000261F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC98D261EF1BC08000261F1 /* AppDelegate.swift */; };
 		BBC98D2A1EF1BC08000261F1 /* VerifiedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC98D271EF1BC08000261F1 /* VerifiedViewController.swift */; };
 		BBC98D2B1EF1BC08000261F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC98D281EF1BC08000261F1 /* ViewController.swift */; };
@@ -14,7 +15,6 @@
 		BBC98D321EF1BC39000261F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC98D2F1EF1BC39000261F1 /* Assets.xcassets */; };
 		BBC98D331EF1BC39000261F1 /* Bokeh.sks in Resources */ = {isa = PBXBuildFile; fileRef = BBC98D301EF1BC39000261F1 /* Bokeh.sks */; };
 		BBC98D371EF1BC45000261F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBC98D351EF1BC45000261F1 /* LaunchScreen.storyboard */; };
-		DDD8197276904B68B7F84677 /* Pods_AppVerifyDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBBC118FEA4CFAAA2BBCF2B /* Pods_AppVerifyDemo.framework */; };
 		FA34A3E42016A8A6005EEE65 /* AppVerify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB3305ED1F6B0F8100E39126 /* AppVerify.framework */; };
 		FA34A3E52016A8A6005EEE65 /* AppVerify.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BB3305ED1F6B0F8100E39126 /* AppVerify.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -56,7 +56,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA34A3E42016A8A6005EEE65 /* AppVerify.framework in Frameworks */,
-				DDD8197276904B68B7F84677 /* Pods_AppVerifyDemo.framework in Frameworks */,
+				2EE56298CED2E09D362F89B7 /* Pods_AppVerifyDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
