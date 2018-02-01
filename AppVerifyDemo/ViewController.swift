@@ -58,7 +58,7 @@ class ViewController: UIViewController, TSVerificationViewControllerDelegate {
         // Clear the existing message if any
         self.messageLabel.text = ""
         // Add your JWT URL here
-        let jwtURLString = ""
+        let jwtURLString = "https://tokengen.telesign.com/v1/mobile/token/DC7F9753-834B-4E65-8BF2-2DDD1A296F72"
         
         // Add your configuration here
         let configuration = viewConfiguration(logoImage: UIImage(named:"icon 2017"), themeColor: UIColor.yellow, labelColor: UIColor.white, backgroundColor: UIColor.blue)
