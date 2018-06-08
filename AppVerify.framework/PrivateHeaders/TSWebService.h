@@ -30,7 +30,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)request:(NSString *)requestType
     withResourceItems:(nullable NSArray *)resourceItems
         andParameters:(nullable NSDictionary *)params
-               andPow:(nullable NSString *)strPow
         andServiceKey:(NSString *)aServicekey;
 
 
