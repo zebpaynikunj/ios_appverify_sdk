@@ -1,0 +1,7 @@
+ module Resources {
+        header "../AppVerify.framework/PrivateHeaders/TSWebService.h"
+        header "../AppVerify.framework/PrivateHeaders/TSBase64.h"
+        header "../AppVerify.framework/PrivateHeaders/TSCountryPickerView.h"
+        
+        export *
+    }
